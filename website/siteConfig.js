@@ -48,8 +48,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: 'img/favicon-96x96.png',
+  footerIcon: 'img/favicon-96x96.png',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
