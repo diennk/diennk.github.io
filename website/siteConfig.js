@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Diens Notes', // Title for your website.
-  tagline: 'A website for testing',
+  tagline: 'Hey! I am Dien, a Hanoi-Based Project Manager & Fullstack Developer',
   url: 'https://diennk.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -42,6 +42,7 @@ const siteConfig = {
     { doc: 'doc4', label: 'API' },
     { page: 'help', label: 'Help' },
     { blog: true, label: 'Blog' },
+    { page: 'portfolio', label: 'Porfolio' },
   ],
 
   // If you have users set above, you add it here:
