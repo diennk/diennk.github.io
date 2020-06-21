@@ -151,7 +151,7 @@ class Index extends React.Component {
       <Block layout="fourColumn" noPaddingTop>
         {[
           {
-            content: 'Develop things of tech wourld',
+            content: 'Develop things of tech world',
             image: `${baseUrl}img/joystick.svg`,
             imageAlign: 'top',
             title: 'Fullstack Developer',
