@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: 'Diens Notes', // Title for your website.
-  tagline: 'Hey! I am Dien, a Hanoi-Based Project Manager & Fullstack Developer',
+  tagline: 'Hey! I am Dien, a Hanoi-Based Fullstack Developer',
   url: 'https://diennk.github.io', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:

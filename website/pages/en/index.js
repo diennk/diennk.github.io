@@ -15,8 +15,8 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
@@ -64,9 +64,11 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href="tel://+84916154234">Phone</Button>
+            {/* <Button href={docUrl('doc1.html')}>Email</Button>
+            <Button href={docUrl('doc2.html')}>Telegram</Button> */}
+            <Button href="mailto://khanhdien@gmail.com">Email</Button>
+            <Button href="https://t.me/diennk" target="_blank">Telegram</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -76,8 +78,8 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = '' } = this.props;
+    const { baseUrl } = siteConfig;
 
     const Block = props => (
       <Container
@@ -95,7 +97,7 @@ class Index extends React.Component {
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{ textAlign: 'center' }}>
         <h2>Feature Callout</h2>
         <MarkdownBlock>These are features of this project</MarkdownBlock>
       </div>
@@ -149,16 +151,28 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
+            content: 'Develop things of tech wourld',
+            image: `${baseUrl}img/joystick.svg`,
             imageAlign: 'top',
-            title: 'Feature One',
+            title: 'Fullstack Developer',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            content: 'Manage difference project types',
+            image: `${baseUrl}img/spaceship.svg`,
             imageAlign: 'top',
-            title: 'Feature Two',
+            title: 'Product Manager',
+          },
+          {
+            content: 'Design a system from scratch',
+            image: `${baseUrl}img/heart.svg`,
+            imageAlign: 'top',
+            title: 'System Architecture',
+          },
+          {
+            content: 'Make your business go faster',
+            image: `${baseUrl}img/technical-support.svg`,
+            imageAlign: 'top',
+            title: 'Solution Consultant',
           },
         ]}
       </Block>
@@ -198,7 +212,7 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <FeatureCallout />
+          {/* <FeatureCallout /> */}
           <LearnHow />
           <TryOut />
           <Description />
